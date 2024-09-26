@@ -25,8 +25,11 @@ int main() {
 
 	std::vector<int> sortedArray = bubbleSort.bubbleSort(array);;
 
-	for (int index = 0; index < sortedArray.size(); index++)
+	for (int index = 0; index < sortedArray.size(); index++) {
+	
 		std::cout << sortedArray[index] << " ";
+	
+	}
 
 	return 0;
 
