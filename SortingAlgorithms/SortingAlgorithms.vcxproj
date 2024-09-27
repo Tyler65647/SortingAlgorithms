@@ -127,11 +127,61 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BingoSort.cpp" />
+    <ClCompile Include="BitonicSort.cpp" />
+    <ClCompile Include="BogoSort.cpp" />
     <ClCompile Include="BubbleSort.cpp" />
+    <ClCompile Include="BucketSort.cpp" />
+    <ClCompile Include="CocktailSort.cpp" />
+    <ClCompile Include="CombSort.cpp" />
+    <ClCompile Include="CountingSort.cpp" />
+    <ClCompile Include="CycleSort.cpp" />
+    <ClCompile Include="GnomeSort.cpp" />
+    <ClCompile Include="HeapSort.cpp" />
+    <ClCompile Include="InsertionSort.cpp" />
+    <ClCompile Include="OddEvenSort.cpp" />
+    <ClCompile Include="PancakeSort.cpp" />
+    <ClCompile Include="PigeonholeSort.cpp" />
+    <ClCompile Include="QuickSort.cpp" />
+    <ClCompile Include="RadixSort.cpp" />
+    <ClCompile Include="SelectionSort.cpp" />
+    <ClCompile Include="ShellSort.cpp" />
+    <ClCompile Include="SleepSort.cpp" />
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="StoogeSort.cpp" />
+    <ClCompile Include="StrandSort.cpp" />
+    <ClCompile Include="TagSort.cpp" />
+    <ClCompile Include="ThreeWayMergeSort.cpp" />
+    <ClCompile Include="TimSort.cpp" />
+    <ClCompile Include="TreeSort.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BingoSort.h" />
+    <ClInclude Include="BitonicSort.h" />
+    <ClInclude Include="BogoSort.h" />
     <ClInclude Include="BubbleSort.h" />
+    <ClInclude Include="BucketSort.h" />
+    <ClInclude Include="CocktailSort.h" />
+    <ClInclude Include="CombSort.h" />
+    <ClInclude Include="CountingSort.h" />
+    <ClInclude Include="CycleSort.h" />
+    <ClInclude Include="GnomeSort.h" />
+    <ClInclude Include="HeapSort.h" />
+    <ClInclude Include="InsertionSort.h" />
+    <ClInclude Include="OddEvenSort.h" />
+    <ClInclude Include="PancakeSort.h" />
+    <ClInclude Include="PigeonholeSort.h" />
+    <ClInclude Include="QuickSort.h" />
+    <ClInclude Include="RadixSort.h" />
+    <ClInclude Include="SelectionSort.h" />
+    <ClInclude Include="ShellSort.h" />
+    <ClInclude Include="SleepSort.h" />
+    <ClInclude Include="StoogeSort.h" />
+    <ClInclude Include="StrandSort.h" />
+    <ClInclude Include="TagSort.h" />
+    <ClInclude Include="ThreeWayMergeSort.h" />
+    <ClInclude Include="TimSort.h" />
+    <ClInclude Include="TreeSort.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
