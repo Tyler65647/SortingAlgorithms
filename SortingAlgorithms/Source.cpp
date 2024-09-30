@@ -17,7 +17,7 @@ int main() {
 	std::vector<int> array;
 
 	int arraySize = 10;
-	int arrayMax = 10;
+	int arrayMax = 100;
 	
 	for (int i = 0; i < arraySize; i++) {
 	
@@ -25,25 +25,20 @@ int main() {
 	
 	}
 
-	insertionSort.insertionSort(array);
+	/*insertionSort.insertionSort(array);
 
 	for (int index = 0; index < array.size(); index++)
-		std::cout << array[index] << " ";
+		std::cout << array[index] << " ";*/
 
 	/*selectionSort.selectionSort(array);
 
 	for (int index = 0; index < array.size(); index++)
 		std::cout << array[index] << " ";*/
 
-	/*bubbleSort.setArraySize(array);
+	bubbleSort.bubbleSort(array);
 
-	std::vector<int> sortedArray = bubbleSort.bubbleSort(array);;
-
-	for (int index = 0; index < sortedArray.size(); index++) {
-	
-		std::cout << sortedArray[index] << " ";
-	
-	}*/
+	for (int index = 0; index < array.size(); index++)
+		std::cout << array[index] << " ";
 
 	return 0;
 
