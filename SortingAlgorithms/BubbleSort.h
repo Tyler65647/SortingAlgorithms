@@ -14,7 +14,7 @@ public:
 	void setArraySize(std::vector<int> array);
 	int getArraySize();
 
-	std::vector<int> bubbleSort(std::vector<int>& array);
+	std::vector<int> bubbleSort(std::vector<int> array);
 
 };
 

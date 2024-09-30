@@ -3,16 +3,18 @@
 #include <ctime>
 
 #include "BubbleSort.h"
+#include "SelectionSort.h"
 
 int main() {
 
 	srand(time(0));
 
 	BubbleSort bubbleSort;
+	SelectionSort selectionSort;
 
 	std::vector<int> array;
 
-	int arraySize = 100;
+	int arraySize = 50;
 	int arrayMax = 10;
 	
 	for (int i = 0; i < arraySize; i++) {
@@ -21,7 +23,12 @@ int main() {
 	
 	}
 
-	bubbleSort.setArraySize(array);
+	selectionSort.selectionSort(array);
+
+	for (int index = 0; index < array.size(); index++)
+		std::cout << array[index] << " ";
+
+	/*bubbleSort.setArraySize(array);
 
 	std::vector<int> sortedArray = bubbleSort.bubbleSort(array);;
 
@@ -29,7 +36,7 @@ int main() {
 	
 		std::cout << sortedArray[index] << " ";
 	
-	}
+	}*/
 
 	return 0;
 

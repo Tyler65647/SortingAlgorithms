@@ -12,7 +12,7 @@ int BubbleSort::getArraySize()
     return this->arraySize;
 }
 
-std::vector<int> BubbleSort::bubbleSort(std::vector<int>& array)
+std::vector<int> BubbleSort::bubbleSort(std::vector<int> array)
 {
     
     int arraySize = getArraySize();
