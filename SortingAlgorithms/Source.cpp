@@ -6,6 +6,7 @@
 #include "SelectionSort.h"
 #include "InsertionSort.h"
 #include "MergeSort.h"
+#include "QuickSort.h"
 
 int main() {
 
@@ -15,6 +16,7 @@ int main() {
 	SelectionSort selectionSort;
 	InsertionSort insertionSort;
 	MergeSort mergeSort;
+	QuickSort quickSort;
 
 	std::vector<int> array;
 
@@ -42,7 +44,12 @@ int main() {
 	for (int index = 0; index < array.size(); index++)
 		std::cout << array[index] << " ";*/
 
-	mergeSort.mergeSort(array, -1, -1);
+	/*mergeSort.mergeSort(array, -1, -1);
+
+	for (int index = 0; index < array.size(); index++)
+		std::cout << array[index] << " ";*/
+
+	quickSort.quickSort(array, -1, -1);
 
 	for (int index = 0; index < array.size(); index++)
 		std::cout << array[index] << " ";
