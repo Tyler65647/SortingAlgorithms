@@ -139,6 +139,7 @@
     <ClCompile Include="GnomeSort.cpp" />
     <ClCompile Include="HeapSort.cpp" />
     <ClCompile Include="InsertionSort.cpp" />
+    <ClCompile Include="MergeSort.cpp" />
     <ClCompile Include="OddEvenSort.cpp" />
     <ClCompile Include="PancakeSort.cpp" />
     <ClCompile Include="PigeonholeSort.cpp" />
@@ -168,6 +169,7 @@
     <ClInclude Include="GnomeSort.h" />
     <ClInclude Include="HeapSort.h" />
     <ClInclude Include="InsertionSort.h" />
+    <ClInclude Include="MergeSort.h" />
     <ClInclude Include="OddEvenSort.h" />
     <ClInclude Include="PancakeSort.h" />
     <ClInclude Include="PigeonholeSort.h" />

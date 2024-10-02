@@ -5,6 +5,7 @@
 #include "BubbleSort.h"
 #include "SelectionSort.h"
 #include "InsertionSort.h"
+#include "MergeSort.h"
 
 int main() {
 
@@ -13,10 +14,11 @@ int main() {
 	BubbleSort bubbleSort;
 	SelectionSort selectionSort;
 	InsertionSort insertionSort;
+	MergeSort mergeSort;
 
 	std::vector<int> array;
 
-	int arraySize = 10;
+	int arraySize = 100;
 	int arrayMax = 100;
 	
 	for (int i = 0; i < arraySize; i++) {
@@ -35,7 +37,12 @@ int main() {
 	for (int index = 0; index < array.size(); index++)
 		std::cout << array[index] << " ";*/
 
-	bubbleSort.bubbleSort(array);
+	/*bubbleSort.bubbleSort(array);
+
+	for (int index = 0; index < array.size(); index++)
+		std::cout << array[index] << " ";*/
+
+	mergeSort.mergeSort(array, -1, -1);
 
 	for (int index = 0; index < array.size(); index++)
 		std::cout << array[index] << " ";
