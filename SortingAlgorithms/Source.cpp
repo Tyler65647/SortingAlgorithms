@@ -7,6 +7,7 @@
 #include "InsertionSort.h"
 #include "MergeSort.h"
 #include "QuickSort.h"
+#include "BogoSort.h"
 
 int main() {
 
@@ -17,39 +18,30 @@ int main() {
 	InsertionSort insertionSort;
 	MergeSort mergeSort;
 	QuickSort quickSort;
+	BogoSort bogoSort;
 
 	std::vector<int> array;
 
-	int arraySize = 100;
-	int arrayMax = 100;
+	int arraySize = 10;
+	int arrayMax = 2;
 	
 	for (int i = 0; i < arraySize; i++) {
-	
+
 		array.push_back((rand() % arrayMax) + 1);	
 	
 	}
 
-	/*insertionSort.insertionSort(array);
+	//insertionSort.insertionSort(array);
 
-	for (int index = 0; index < array.size(); index++)
-		std::cout << array[index] << " ";*/
+	//selectionSort.selectionSort(array);
 
-	/*selectionSort.selectionSort(array);
+	//bubbleSort.bubbleSort(array);
 
-	for (int index = 0; index < array.size(); index++)
-		std::cout << array[index] << " ";*/
+	//mergeSort.mergeSort(array, -1, -1);
 
-	/*bubbleSort.bubbleSort(array);
+	//quickSort.quickSort(array, -1, -1);
 
-	for (int index = 0; index < array.size(); index++)
-		std::cout << array[index] << " ";*/
-
-	/*mergeSort.mergeSort(array, -1, -1);
-
-	for (int index = 0; index < array.size(); index++)
-		std::cout << array[index] << " ";*/
-
-	quickSort.quickSort(array, -1, -1);
+	bogoSort.bogoSort(array);
 
 	for (int index = 0; index < array.size(); index++)
 		std::cout << array[index] << " ";
