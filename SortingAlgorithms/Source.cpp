@@ -9,6 +9,7 @@
 #include "QuickSort.h"
 #include "BogoSort.h"
 #include "HeapSort.h"
+#include "CycleSort.h"
 
 int main() {
 
@@ -21,6 +22,7 @@ int main() {
 	QuickSort quickSort;
 	BogoSort bogoSort;
 	HeapSort heapSort;
+	CycleSort cycleSort;
 
 	std::vector<int> array;
 
@@ -32,6 +34,12 @@ int main() {
 		array.push_back((rand() % arrayMax) + 1);	
 	
 	}
+
+	std::cout << "Unsorted Array: \n";
+	for (int index = 0; index < array.size(); index++)
+		std::cout << array[index] << " ";
+
+	std::cout << "\n\n";
 
 	//insertionSort.insertionSort(array);
 
@@ -45,8 +53,11 @@ int main() {
 
 	//bogoSort.bogoSort(array);
 
-	heapSort.heapSort(array);
+	//heapSort.heapSort(array);
 
+	cycleSort.cycleSort(array);
+
+	std::cout << "\nSorted Array: \n";
 	for (int index = 0; index < array.size(); index++)
 		std::cout << array[index] << " ";
 
