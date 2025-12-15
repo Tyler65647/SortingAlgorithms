@@ -8,6 +8,7 @@
 #include "MergeSort.h"
 #include "QuickSort.h"
 #include "BogoSort.h"
+#include "HeapSort.h"
 
 int main() {
 
@@ -19,11 +20,12 @@ int main() {
 	MergeSort mergeSort;
 	QuickSort quickSort;
 	BogoSort bogoSort;
+	HeapSort heapSort;
 
 	std::vector<int> array;
 
 	int arraySize = 10;
-	int arrayMax = 2;
+	int arrayMax = 10;
 	
 	for (int i = 0; i < arraySize; i++) {
 
@@ -41,7 +43,9 @@ int main() {
 
 	//quickSort.quickSort(array, -1, -1);
 
-	bogoSort.bogoSort(array);
+	//bogoSort.bogoSort(array);
+
+	heapSort.heapSort(array);
 
 	for (int index = 0; index < array.size(); index++)
 		std::cout << array[index] << " ";

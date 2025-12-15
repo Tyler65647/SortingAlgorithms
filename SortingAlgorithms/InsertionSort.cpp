@@ -3,9 +3,7 @@
 void InsertionSort::insertionSort(std::vector<int>& array)
 {
 
-	int size = array.size();
-
-	for (int index = 0; index < size; index++) {
+	for (int index = 0; index < array.size(); index++) {
 
 		int key = array[index];
 
