@@ -11,6 +11,7 @@
 #include "HeapSort.h"
 #include "CycleSort.h"
 #include "ThreeWayMergeSort.h"
+#include "CountingSort.h"
 
 int main() {
 
@@ -25,10 +26,11 @@ int main() {
 	HeapSort heapSort;
 	CycleSort cycleSort;
 	ThreeWayMergeSort threeWayMergeSort;
+	CountingSort countingSort;
 
 	std::vector<int> array;
 
-	int arraySize = 10;
+	int arraySize = 100;
 	int arrayMax = 10;
 	
 	for (int i = 0; i < arraySize; i++) {
@@ -59,7 +61,9 @@ int main() {
 
 	//cycleSort.cycleSort(array);
 
-	threeWayMergeSort.threeWayMergeSort(array, -1, - 1);
+	//threeWayMergeSort.threeWayMergeSort(array, -1, - 1);
+
+	countingSort.countingSort(array);
 
 	std::cout << "\nSorted Array: \n";
 	for (int index = 0; index < array.size(); index++)
