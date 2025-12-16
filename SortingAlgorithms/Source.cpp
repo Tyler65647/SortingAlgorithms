@@ -13,6 +13,7 @@
 #include "ThreeWayMergeSort.h"
 #include "CountingSort.h"
 #include "RadixSort.h"
+#include "BucketSort.h"
 
 int main() {
 
@@ -29,6 +30,7 @@ int main() {
 	ThreeWayMergeSort threeWayMergeSort;
 	CountingSort countingSort;
 	RadixSort radixSort;
+	BucketSort bucketSort;
 
 	std::vector<int> array;
 
@@ -67,7 +69,9 @@ int main() {
 
 	//countingSort.countingSort(array);
 
-	radixSort.radixSort(array);
+	//radixSort.radixSort(array);
+
+	bucketSort.bucketSort(array);
 
 	std::cout << "\nSorted Array: \n";
 	for (int index = 0; index < array.size(); index++)
