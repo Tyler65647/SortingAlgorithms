@@ -10,6 +10,7 @@
 #include "BogoSort.h"
 #include "HeapSort.h"
 #include "CycleSort.h"
+#include "ThreeWayMergeSort.h"
 
 int main() {
 
@@ -23,6 +24,7 @@ int main() {
 	BogoSort bogoSort;
 	HeapSort heapSort;
 	CycleSort cycleSort;
+	ThreeWayMergeSort threeWayMergeSort;
 
 	std::vector<int> array;
 
@@ -55,7 +57,9 @@ int main() {
 
 	//heapSort.heapSort(array);
 
-	cycleSort.cycleSort(array);
+	//cycleSort.cycleSort(array);
+
+	threeWayMergeSort.threeWayMergeSort(array, -1, - 1);
 
 	std::cout << "\nSorted Array: \n";
 	for (int index = 0; index < array.size(); index++)
