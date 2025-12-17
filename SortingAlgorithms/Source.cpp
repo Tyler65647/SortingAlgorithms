@@ -15,6 +15,7 @@
 #include "RadixSort.h"
 #include "BucketSort.h"
 #include "PigeonholeSort.h"
+#include "IntroSort.h"
 
 int main() {
 
@@ -33,6 +34,7 @@ int main() {
 	RadixSort radixSort;
 	BucketSort bucketSort;
 	PigeonholeSort pigeonholeSort;
+	IntroSort introSort;
 
 	std::vector<int> array;
 
@@ -75,7 +77,9 @@ int main() {
 
 	//bucketSort.bucketSort(array);
 
-	pigeonholeSort.pigeonholeSort(array);
+	//pigeonholeSort.pigeonholeSort(array);
+
+	introSort.introSort(array);
 
 	std::cout << "\nSorted Array: \n";
 	for (int index = 0; index < array.size(); index++)
